@@ -1,6 +1,7 @@
 TEAM 3
 
 Navil Tristan Avicenna Mausar 2506634746
+Muhammad Nurmajiid 2506634733
 
 topic : SDG 13 Climate Action
 
