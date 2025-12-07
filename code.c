@@ -1,37 +1,24 @@
 #include <stdio.h>
 
-int houseCalc () {
+// carbon emission calculator
 
+typedef struct {
+    float size;
+    char name[31];
+} area;
+// struct for area
+
+typedef struct {
+    float size;
+    float emmissions;
+} house;
+// struct for house size and emmisions
+
+
+int main () {
+
+    return 0;
 }
-
-int carDieselCalc () {
-
-}
-
-int carGasCalc () {
-
-}
-
-int carElectricCalc () {
-
-}
-
-int carHybridCalc () {
-
-}
-
-int motorGasCalc () {
-
-}
-
-int motorEletricCalc () {
-
-}
-
-int planeClac () {
-    
-}
-
 
 
 int main () {
