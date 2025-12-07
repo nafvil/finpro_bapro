@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include <stdio.h>
-
 // carbon emission calculator
 
 typedef struct {
