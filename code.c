@@ -2,8 +2,13 @@
 
 float RegMap (float a; float b){
     return a * b;
+// carbon emission calculator
 
-}
+typedef struct {
+    float size;
+    char name[31];
+} area;
+// struct for area
 
 float RegArea (float AvH){
         AvH - //in Meters
@@ -134,3 +139,5 @@ int main(){
 }
 
 */
+ return 0;
+}
