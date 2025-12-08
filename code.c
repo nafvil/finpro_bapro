@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-float RegMap (float a; float b){
-    return a * b;
 // carbon emission calculator
 
 typedef struct {
@@ -9,6 +7,16 @@ typedef struct {
     char name[31];
 } area;
 // struct for area
+
+typedef struct {
+    float amount;
+    float size;
+    float emmissions;
+} house;
+// struct for house 
+
+float RegMap (float a; float b){
+    return a * b;
 
 float RegArea (float AvH){
         AvH - //in Meters
@@ -19,10 +27,10 @@ float RegArea (float AvH){
 float RegCalc (float C){
     C = 55;
             //in tons
-        return RgArea * Carbons
+    return RgArea * Carbons;
 }
 
-float ClimateImpTree(float a; float b; float c; float d; float e; float EqA; ){
+float ClimateImpTree(float a; float b; float c; float d; float RegCalc; float EqA; ){
     a =  0.11; //trees sampled in an urban settings
     b =  23.2; //coniferous tree/year
     c =  0.89; //Percent of deciduous trees in sampled Urban settings
@@ -30,7 +38,7 @@ float ClimateImpTree(float a; float b; float c; float d; float e; float EqA; ){
         
     EqA = (a * b) + (c * d);
         
-    e = RegCalc;
+    
     return e / (EqA / 2000);
 
 
@@ -50,63 +58,10 @@ float ClimateImpCoal(float a; float b; float c; float d; float e;){
 }
 
 
-#include <stdio.h>
-
-// carbon emission calculator
-
-typedef struct {
-    float size;
-    char name[31];
-} area;
-// struct for area
-
-typedef struct {
-    float size;
-    float emmissions;
-} house;
-// struct for house size and emmisions
-
-
-
 int main () {
 
  return 0;
 }
-
-
-
-// carbon emission calculator
-
-typedef struct {
-    float size;
-    char name[31];
-} area;
-// struct for area
-
-typedef struct {
-    float size;
-    float emmissions;
-} house;
-// struct for house size and emmisions
-
-
-int main () {
-
-    return 0;
-}
-
-
-int main () {
-
-    return 0;
-}
-
-
-
-//test
-
-
-
 
 
 /* PSEUDOCODE:
