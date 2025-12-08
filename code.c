@@ -17,8 +17,6 @@ float ClimateImpCoal(float emissionTons);
 int main () {
     printf("=== Housing Area Carbon Emmission Calculator ===\n");
     int count;
-    
-    // 1. INPUT SETUP
     printf("Enter number of areas to analyze: ");
     scanf("%d", &count);
 
@@ -28,11 +26,11 @@ int main () {
         return 1;
     }
 
-    // Input Loop
+
     for (int i = 0; i < count; i++) {
         printf("\nArea #%d\n", i + 1);
         printf("Enter Area Name: ");
-        scanf("%s", data[i].areaName); // No & needed for strings (arrays)
+        scanf("%s", data[i].areaName);
         printf("Enter Number of Houses: ");
         scanf("%d", &data[i].numHouses);
     }
