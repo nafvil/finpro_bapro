@@ -2,12 +2,11 @@
 
 // carbon emission calculator
 typedef struct {
-<<<<<<< HEAD
     float size;
     float emmissions;
 } house;
 // struct for house size and emmisions
-=======
+
 typedef struct {
     float amount;
     float size;
@@ -15,11 +14,11 @@ typedef struct {
 } house;
 // struct for house 
 
-float RegMap (float a; float b){
+float RegMap (float a, float b) {
     return a * b;
 
-float RegArea (float AvH){
-        AvH - //in Meters
+float RegArea (float AvH) {
+        AvH; //in Meters
     return (RegMap * 1000) / AvH 
     
 }
@@ -56,12 +55,10 @@ float ClimateImpCoal(float a; float b; float c; float d; float e;){
     //746,630,725.6 metric tons of CO2 × 1/197 power plants = 3,790,003.72 metric tons CO2/power plant
 
 }
->>>>>>> 3b93426 (cleaned up the skeleton code a little)
 
 
 int main () {
 
-<<<<<<< HEAD
     return 0;
 }
 
@@ -95,4 +92,3 @@ int main(){
 }
 
 */
->>>>>>> 3b93426 (cleaned up the skeleton code a little)
