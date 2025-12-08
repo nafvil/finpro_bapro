@@ -2,6 +2,7 @@
 
 // carbon emission calculator
 typedef struct {
+<<<<<<< HEAD
     float size;
     float emmissions;
 } house;
@@ -55,9 +56,21 @@ float ClimateImpCoal(float a; float b; float c; float d; float e;){
     //746,630,725.6 metric tons of CO2 × 1/197 power plants = 3,790,003.72 metric tons CO2/power plant
 
 }
+=======
+    float areaSize;
+    char areaName[31];
+    int houseNum;
+    float emmissions;
+} Data;
+// struct for grouping the area data
+>>>>>>> f966563 (deleted a lot of stuff but it'll work)
 
+float CarbonEmmissionCalc(Data *data);
+float ClimateImpTree(float emmissionTons);
+float ClimateImpCoal(float emissionTons);
 
 int main () {
+<<<<<<< HEAD
 
     return 0;
 }
@@ -92,3 +105,10 @@ int main(){
 }
 
 */
+=======
+    printf("=== Housing Area Carbon Emmission Calculator ===\n");
+
+
+    return 0;
+}
+>>>>>>> f966563 (deleted a lot of stuff but it'll work)
