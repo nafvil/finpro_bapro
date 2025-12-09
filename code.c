@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// carbon emission calculator
+// CO2 Conversion calculator
 
 typedef struct {
     float areaSize;
@@ -14,6 +14,8 @@ typedef struct {
 float CarbonEmissionCalc(Data *data);
 float ClimateImpTree(float emissionTons);
 float ClimateImpCoal(float emissionTons);
+float ClimateImpNature(float emissionTons);
+float ClimateImpGarbage(float emissionTons);
 
 int main () {
     printf("=== Housing Area Carbon Emission Calculator ===\n");
@@ -50,18 +52,51 @@ int main () {
         float totalEmissions = CarbonEmissionCalc(&data[i]);
         float TreeImpact = ClimateImpTree(totalEmissions);
         float CoalImpact = ClimateImpCoal(totalEmissions);
+        float NatureImpact = ClimateImpNature(totalEmissions);
+        float GarbageImpact = ClimateImpGarbage(totalEmissions);
 
 
         printf("\nArea: %s\n", data[i].areaName);
         printf("Total Emissions: %.2f tons\n", totalEmissions);
-        printf("Trees needed to offset emissions: %.2f\n", TreeImpact); 
-        printf("Equivalent coal burned: %.2f tons\n", CoalImpact);
+        printf("Seedlings grown in 10 years: %.2f\n", TreeImpact); 
+        printf("Equivalent to Coal-fired power Plants in one year: %.2f \n", CoalImpact);
+        printf("Equivalent to Nature-fired Power Plants in one year: %.2f \n", NatureImpact);
+        printf("Equivalent to Waste recycled instead of landfilled: %.2f \n", GarbageImpact);
 
     }
 
     return 0;
 }
 
-float CarbonEmissionCalc(Data *data) {
-    return data
+/* float CarbonEmissionCalc(Data *data) {
+    return data;
+}
+    Gak ngerti cara manggil struct di function
+*/
+
+
+float ClimateImpTree(float EmmisionTons) {
+    float EqA = 36.4;    //36.4 lbs C/tree/year
+        
+    return EmmisionTons / (EqA / 2000);
+    //convert tons to lbs
+
+    // (0.11 [percent of coniferous trees in sampled urban settings] × 23.2 lbs C/coniferous tree/year) + (0.89 [percent of deciduous trees in sampled urban settings] × 38.0 lbs C/deciduous tree/year) = 36.4 lbs C/tree/year
+}
+
+float ClimateImpCoal(float emissionTons) {
+    return emissionTons / 3790003.72;
+
+    //746,630,725.6 metric tons of CO2 × 1/197 power plants = 3,790,003.72 metric tons CO2/power plant
+}
+
+float ClimateImpNature(float EmmisionTons) {
+    return EmmisionTons / 382205.02;
+    //625,669,621.5 metric tons of CO2 × 1/1,637 power plants = 382,205.02 metric tons CO2/power plant
+
+}
+
+float ClimateImpGarbage(float EmmisionTons) {
+    return EmmisionTons / 2.83;
+    //2.83 metric tons CO2 equivalent/ton of waste recycled instead of landfilled
 }
