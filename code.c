@@ -46,11 +46,11 @@ int main () {
         printf("Enter area name: ");
         scanf("%s", data[i].areaName);
         printf("Enter area size: ");
-        scanf("%d", &data[i].areaSize);
+        scanf("%f", &data[i].areaSize);
         printf("Enter Number of houses: ");
         scanf("%d", &data[i].houseNum);
         printf("Enter the average emissions of all the houses: ");
-        scanf("%d", &data[i].houseEmissions);
+        scanf("%f", &data[i].houseEmissions);
     }
 
     printf("\n=== Climate Impact ===\n");
@@ -64,7 +64,7 @@ int main () {
 
 
         printf("\nArea --> %s\n", data[i].areaName);
-        printf("---------------------------");
+        printf("---------------------------\n");
         printf("Total Emissions: %.2f tons\n", totalEmissions);
         printf("Seedlings grown in 10 years: %.2f\n", TreeImpact); 
         printf("Equivalent to Coal-fired power Plants in one year: %.2f \n", CoalImpact);
@@ -78,8 +78,9 @@ int main () {
 
 float CarbonEmissionCalc(Data *data) {
     // because it's a pointer i'll be using it as an array so that it could work
+    float CarbonEmissionCalc(Data *data) {
     float result = data[0].houseNum * data[0].houseEmissions;
-    result = data[0].totalEmissions;
+    data[0].totalEmissions = result; 
     
     return result;
 }
