@@ -20,3 +20,4 @@ We implement this theme by making a program where we use the data of emission pr
 NAVIL/Nafvil - Make Structs, Functions and Equations and the structure of the code
 MAJID/potuerza - Helps with all Functions that includes data Convertions
 AQEEL/aqeelmalikaziz - Work with the for loops and the inputs of the Main Program 
+RIAN/rhertanto11 - Helps with research for the equations
