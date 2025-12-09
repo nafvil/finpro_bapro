@@ -49,7 +49,7 @@ int main () {
         scanf("%f", &data[i].areaSize);
         printf("Enter Number of houses: ");
         scanf("%d", &data[i].houseNum);
-        printf("Enter the average emissions of all the houses: ");
+        printf("Enter the average emissions of all the houses (in tons per year): ");
         scanf("%f", &data[i].houseEmissions);
     }
 
@@ -64,8 +64,10 @@ int main () {
 
 
         printf("\nArea --> %s\n", data[i].areaName);
+        printf("Area size --> %.2f m^2\n", data[i].areaSize);
+        printf("Total Houses --> %d\n", data[i].houseNum);
         printf("---------------------------\n");
-        printf("Total Emissions: %.2f tons\n", totalEmissions);
+        printf("Total Emissions: %.2f tons per year\n", totalEmissions);
         printf("Seedlings grown in 10 years: %.2f\n", TreeImpact); 
         printf("Equivalent to Coal-fired power Plants in one year: %f \n", CoalImpact);
         printf("Equivalent to Nature-fired Power Plants in one year: %.2f \n", NatureImpact);
