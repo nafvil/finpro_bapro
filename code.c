@@ -45,7 +45,7 @@ int main () {
         printf("\nArea #%d\n", i + 1);
         printf("Enter area name: ");
         scanf("%s", data[i].areaName);
-        printf("Enter area size: ");
+        printf("Enter area size (in m^2): ");
         scanf("%f", &data[i].areaSize);
         printf("Enter Number of houses: ");
         scanf("%d", &data[i].houseNum);
@@ -67,7 +67,7 @@ int main () {
         printf("---------------------------\n");
         printf("Total Emissions: %.2f tons\n", totalEmissions);
         printf("Seedlings grown in 10 years: %.2f\n", TreeImpact); 
-        printf("Equivalent to Coal-fired power Plants in one year: %.2f \n", CoalImpact);
+        printf("Equivalent to Coal-fired power Plants in one year: %f \n", CoalImpact);
         printf("Equivalent to Nature-fired Power Plants in one year: %.2f \n", NatureImpact);
         printf("Equivalent to Waste recycled instead of landfilled: %.2f \n", GarbageImpact);
 
