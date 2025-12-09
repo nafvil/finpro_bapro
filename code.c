@@ -6,35 +6,45 @@ typedef struct {
     float areaSize;
     char areaName[31];
     int houseNum;
-    float emmissions;
+    float houseEmissions;
+    float totalEmissions;
 } Data;
 // struct for grouping the area data
 
-float CarbonEmmissionCalc(Data *data);
-float ClimateImpTree(float emmissionTons);
+float CarbonEmissionCalc(Data *data);
+float ClimateImpTree(float emissionTons);
 float ClimateImpCoal(float emissionTons);
 
 int main () {
-    printf("=== Housing Area Carbon Emmission Calculator ===\n");
+    printf("=== Housing Area Carbon Emission Calculator ===\n");
     int count;
     printf("Enter number of areas to analyze: ");
     scanf("%d", &count);
 
-    Data data = (Data) malloc(count * sizeof(Data));
+    Data *data = (Data*) malloc(count * sizeof(Data));
     if (data == NULL) {
         printf("Memory allocation failed.\n");
         return 1;
     }
 
-
     for (int i = 0; i < count; i++) {
         printf("\nArea #%d\n", i + 1);
-        printf("Enter Area Name: ");
+        printf("Enter area name: ");
         scanf("%s", data[i].areaName);
-        printf("Enter Number of Houses: ");
-        scanf("%d", &data[i].numHouses);
+        printf("Enter area size: ");
+        scanf("%d", &data[i].areaSize);
+        printf("Enter Number of houses: ");
+        scanf("%d", &data[i].houseNum);
+        printf("Enter the average emissions of all the houses: ");
+        scanf("%d", &data[i].houseEmissions);
     }
 
-
+    printf("\n=== Climate Impact ===\n");
+    printf("");
+    
     return 0;
+}
+
+float CarbonEmissionCalc(Data *data) {
+    return data
 }
