@@ -78,8 +78,9 @@ int main () {
 
 float CarbonEmissionCalc(Data *data) {
     // because it's a pointer i'll be using it as an array so that it could work
+    float CarbonEmissionCalc(Data *data) {
     float result = data[0].houseNum * data[0].houseEmissions;
-    result = data[0].totalEmissions;
+    data[0].totalEmissions = result; 
     
     return result;
 }
