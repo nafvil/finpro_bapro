@@ -15,8 +15,7 @@ Climate change is and as climate emergency is increasing the frequency and inten
 
 We implement this theme by making a program where we use the data of emission provided by input to calculate how it would contribute to climate changes (How much your Gas equals to). The goal is to spread awareness through showing data of how much an are actively contributing to Climate change per year.
 
-**
-The Task for the team are as provided:
+**The Task for the team are as provided:**
 
 NAVIL/Nafvil - Make Structs, Functions and Equations and the structure of the code
 MAJID/potuerza - Helps with all Functions that includes data Convertions
