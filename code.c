@@ -101,7 +101,7 @@ float ClimateImpCoal(float totalEmissions) {
     return totalEmissions / 3790003.72;
 
     //746,630,725.6 metric tons of CO2 × 1/197 power plants = 3,790,003.72 metric tons CO2/power plant
-}
+} 
 
 float ClimateImpNature(float totalEmissions) {
     return totalEmissions / 382205.02;

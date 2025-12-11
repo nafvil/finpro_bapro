@@ -4,6 +4,7 @@
 1. Navil Tristan Avicenna Mausar 2506634746
 2. Muhammad Nurmajiid 2506634733
 3. Muhammad Aqeela Malik Azis 2506555275
+4. Mohamad Rian Hertanto
 
 topic : SDG 13 Climate Action
 concept: a program that calculates the total amount of CO2 Emissions in a given area to how much impact it has on the environment
@@ -18,6 +19,9 @@ We implement this theme by making a program where we use the data of emission pr
 **The Task for the team are as provided:**
 
 NAVIL/Nafvil - Make Structs, Functions and Equations and the structure of the code
+
 MAJID/potuerza - Helps with all Functions that includes data Convertions
+
 AQEEL/aqeelmalikaziz - Work with the for loops and the inputs of the Main Program 
+
 RIAN/rhertanto11 - Helps with research for the equations
